@@ -1,5 +1,5 @@
 let display = document.getElementById("display");
-let history = [];
+
 function appendValue(value) {
     display.value += value;
 }
@@ -20,19 +20,8 @@ function calculate() {
         display.value = result;
 
         history.push(expression + " = " + result);
-        updateHistory();
+       
     } catch (error) {
         display.value = "Error";
     }
-}
-function updateHistory() {
-    let historyList = document.getElementById("historyList");
-
-    historyList.innerHTML = "";
-
-    history.forEach(function(item) {
-        let historyItem = document.createElement("p");
-        historyItem.textContent = item;
-        historyList.appendChild(historyItem);
-    });
 }
