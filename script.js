@@ -45,8 +45,7 @@ function calculate() {
         display.value = "Error";
     }
 }
-}
-document.addEventListener("keydown", function(event) {
+    document.addEventListener("keydown", function(event) {
 
     let key = event.key;
 
@@ -60,3 +59,5 @@ document.addEventListener("keydown", function(event) {
     appendValue(key);
 }
 });
+}
+
