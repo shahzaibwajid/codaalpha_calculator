@@ -20,7 +20,7 @@ function calculate() {
         display.value = result;
 
         history.push(expression + " = " + result);
-
+        updateHistory();
     } catch (error) {
         display.value = "Error";
     }
