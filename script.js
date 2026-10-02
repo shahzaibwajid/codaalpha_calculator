@@ -25,3 +25,14 @@ function calculate() {
         display.value = "Error";
     }
 }
+function updateHistory() {
+    let historyList = document.getElementById("historyList");
+
+    historyList.innerHTML = "";
+
+    history.forEach(function(item) {
+        let historyItem = document.createElement("p");
+        historyItem.textContent = item;
+        historyList.appendChild(historyItem);
+    });
+}
