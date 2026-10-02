@@ -46,3 +46,17 @@ function calculate() {
     }
 }
 }
+document.addEventListener("keydown", function(event) {
+
+    let key = event.key;
+
+    if (key >= "0" && key <= "9") {
+        appendValue(key);
+    }
+    if (key === "Enter") {
+    calculate();
+}
+    if (["+", "-", "*", "/", "."].includes(key)) {
+    appendValue(key);
+}
+});
