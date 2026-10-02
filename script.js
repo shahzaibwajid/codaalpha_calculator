@@ -14,13 +14,7 @@ function deleteLast() {
 
 function calculate() {
     try {
-        let expression = display.value;
-        let result = eval(expression);
-
-        display.value = result;
-
-        history.push(expression + " = " + result);
-       
+        display.value = eval(display.value);
     } catch (error) {
         display.value = "Error";
     }
