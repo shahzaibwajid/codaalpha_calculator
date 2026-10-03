@@ -41,12 +41,13 @@ document.addEventListener("keydown", function(event) {
     if (key === "Enter") {
         calculate();
     }
+
     if (key === "Backspace") {
-       deleteLast();
-}
+        deleteLast();
+    }
 
     if (key === "Escape") {
-       clearDisplay();
-}
+        clearDisplay();
+    }
 
 });
