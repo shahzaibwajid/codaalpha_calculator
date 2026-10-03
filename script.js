@@ -45,7 +45,7 @@ document.addEventListener("keydown", function(event) {
     deleteLast();
 }
 
-if (key === "Escape") {
+    if (key === "Escape") {
     clearDisplay();
 }
 
