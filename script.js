@@ -42,11 +42,11 @@ document.addEventListener("keydown", function(event) {
         calculate();
     }
     if (key === "Backspace") {
-    deleteLast();
+       deleteLast();
 }
 
     if (key === "Escape") {
-    clearDisplay();
+       clearDisplay();
 }
 
 });
